@@ -1,62 +1,46 @@
-
-
-import React, { useState } from "react";
+import { useEffect } from 'react';
+import M from 'materialize-css'; // Import Materialize CSS library
+import 'materialize-css/dist/css/materialize.min.css'; // Import Materialize CSS styles
+import { TiThMenu } from "react-icons/ti";
+import logo from '../../../src/assets/uniwear-high-resolution-logo-transparent.png'; // Import logo image
+import './Navigation.css';
 import { NavLink } from "react-router-dom";
-import { IoClose, IoMenu } from "react-icons/io5";
-import "./Navigation.css";
 
 const Navigation = () => {
- return (
-   <header className="header">
-     <nav className="nav container">
-       <NavLink to="UniWear/" className="nav__logo">
-         Navigation Bar
-       </NavLink>
+  useEffect(() => {
+    // Initialize sidenav when the component mounts
+    const sidenav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenav);
+  }, []);
 
-       <div
-         className={"nav__menu"}
-         id="nav-menu"
-       >
-         <ul className="nav__list">
-           <li className="nav__item">
-             <NavLink to="UniWear/discover" className="nav__link">
-			 Discover
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink to="UniWear/sell" className="nav__link">
-               Sell
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink
-               to="UniWear/about"
-               className="nav__link"
-             >
-               About
-             </NavLink>
-           </li>
-           <li className="nav__item">
-             <NavLink
-               to="UniWear/login"
-               className="nav__link"
-             >
-               Login
-             </NavLink>
-           </li>
-           
-         </ul>
-         <div className="nav__close" id="nav-close">
-           <IoClose />
-         </div>
-       </div>
+  return (
+    <>
+      <nav>
+        <div className="nav-wrapper">
+          <a href="#!" className="brand-logo">
+            <img src={logo} alt="Logo" style={{ width: '150px', height: '40px' }} /> {/* Specify logo dimensions */}
+          </a>
+          <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+            <i className="material-icons"><TiThMenu /></i>
+          </a>
+          <ul className="right hide-on-med-and-down">
+            <li><NavLink to="UniWear/">Home</NavLink></li>
+            <li><NavLink to="UniWear/discover">Discover</NavLink></li>
+            <li><NavLink to="UniWear/sell">Sell</NavLink></li>
+            <li><NavLink to="UniWear/about">About</NavLink></li>
+            <li><NavLink to="UniWear/login">Login</NavLink></li>
+          </ul>
+        </div>
+      </nav>
 
-       <div className="nav__toggle" id="nav-toggle">
-         <IoMenu />
-       </div>
-     </nav>
-   </header>
- );
+      <ul className="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </>
+  );
 };
 
 export default Navigation;
