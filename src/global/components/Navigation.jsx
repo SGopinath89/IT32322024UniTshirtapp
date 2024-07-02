@@ -18,7 +18,7 @@ const Navigation = () => {
       <nav>
         <div className="nav-wrapper">
           <a href="#!" className="brand-logo">
-            <img src={logo} alt="Logo" style={{ width: '150px', height: '40px' }} /> {/* Specify logo dimensions */}
+            <img src={logo} alt="Logo" style={{ width: '150px', height: '30px' }} /> {/* Specify logo dimensions */}
           </a>
           <a href="#" data-target="mobile-demo" className="sidenav-trigger">
             <i className="material-icons"><TiThMenu /></i>
