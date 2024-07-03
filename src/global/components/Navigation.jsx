@@ -18,7 +18,7 @@ const Navigation = () => {
     <>
       <nav>
         <div className="nav-wrapper">
-          <a href="#!" className="brand-logo">
+          <a href="./" className="brand-logo">
             <img src={logo} alt="Logo" style={{ width: '150px', height: '30px' }} /> {/* Specify logo dimensions */}
           </a>
           <a href="#" data-target="mobile-demo" className="sidenav-trigger">
@@ -29,7 +29,7 @@ const Navigation = () => {
             <li><NavLink to="UniWear/discover">Discover</NavLink></li>
             <li><NavLink to="UniWear/sell">Sell</NavLink></li>
             <li><NavLink to="UniWear/about">About</NavLink></li>
-            <li><NavLink to="UniWear/login">Login</NavLink></li>
+            <li><NavLink to="UniWear/login"><button className="login-btn">Login</button></NavLink></li>
           </ul>
         </div>
       </nav>
