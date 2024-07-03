@@ -38,7 +38,7 @@ export default function Home() {
               Choose UniWear - where unmatched quality meets your brand's aspirations. Elevate your identity with T-shirts that reflect the true essence of your university.</p>
           </div>
           <div className="image-body">
-            <img src = {Img1}></img> 
+            <img src = {Img1}></img>
           </div>
         </div>
       </div>
