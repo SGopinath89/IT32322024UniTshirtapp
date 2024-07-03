@@ -5,6 +5,7 @@ import { TiThMenu } from "react-icons/ti";
 import logo from '../../../src/assets/uniwear-high-resolution-logo-transparent.png'; // Import logo image
 import './Navigation.css';
 import { NavLink } from "react-router-dom";
+import "../../index.css";
 
 const Navigation = () => {
   useEffect(() => {
@@ -34,10 +35,11 @@ const Navigation = () => {
       </nav>
 
       <ul className="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><NavLink to="UniWear/">Home</NavLink></li>
+        <li><NavLink to="UniWear/discover">Discover</NavLink></li>
+        <li><NavLink to="UniWear/sell">Sell</NavLink></li>
+        <li><NavLink to="UniWear/about">About</NavLink></li>
+        <li><NavLink to="UniWear/login">Login</NavLink></li>
       </ul>
     </>
   );
