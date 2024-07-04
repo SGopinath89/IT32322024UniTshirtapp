@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       <div className="content-section">
-        <div className="card">
+        <div className="card home-card">
           <h2>Start Here Become a Seller</h2>
           <div className="card-section-text">
             <p>Start selling your designs on UniWear. Our new experience makes it super simple. Upload your original designs and watch the cash flow!</p>

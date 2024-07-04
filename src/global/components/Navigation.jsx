@@ -4,15 +4,22 @@ import 'materialize-css/dist/css/materialize.min.css'; // Import Materialize CSS
 import { TiThMenu } from "react-icons/ti";
 import logo from '../../../src/assets/uniwear-high-resolution-logo-transparent.png'; // Import logo image
 import './Navigation.css';
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../../index.css";
 
-const Navigation = () => {
+const Navigation = ({ setShowNav }) => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     // Initialize sidenav when the component mounts
     const sidenav = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenav);
   }, []);
+
+  const handleLoginClick = () => {
+    setShowNav(false);
+    navigate('/UniWear/login');
+  };
 
   return (
     <>
@@ -29,7 +36,7 @@ const Navigation = () => {
             <li><NavLink to="UniWear/discover">Discover</NavLink></li>
             <li><NavLink to="UniWear/sell">Sell</NavLink></li>
             <li><NavLink to="UniWear/about">About</NavLink></li>
-            <li><NavLink to="UniWear/login"><button className="login-btn">Login</button></NavLink></li>
+            <li><button className="login-btn" onClick={handleLoginClick}>Login</button></li>
           </ul>
         </div>
       </nav>
@@ -39,7 +46,7 @@ const Navigation = () => {
         <li><NavLink to="UniWear/discover">Discover</NavLink></li>
         <li><NavLink to="UniWear/sell">Sell</NavLink></li>
         <li><NavLink to="UniWear/about">About</NavLink></li>
-        <li><NavLink to="UniWear/login">Login</NavLink></li>
+        <li><button onClick={handleLoginClick}>Login</button></li>
       </ul>
     </>
   );
