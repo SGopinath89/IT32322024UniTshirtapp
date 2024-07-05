@@ -22,6 +22,7 @@ export default function Login({ setShowNav }) {
                             <button className='btnmargin'>Log In</button>
                             <button className='btnmargin'>Sign Up</button>
                             <a href='#'>Forgot Password?</a>
+                            <hr></hr>
                         </div>
                     </center>
                 </form>
