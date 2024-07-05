@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Login from './pages/Login/Login';
 import Test from './pages/Test/Test';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
+import SignUp from './pages/SignUp/SignUp';
 import './App.css';
 
 function App() {
