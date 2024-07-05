@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import './Login.css';
+
 import '../../index.css';
+
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Login({ setShowNav }) {
     useEffect(() => {
@@ -14,15 +17,19 @@ export default function Login({ setShowNav }) {
                 <h2>Log In</h2>
                 <form className="login-form">
                     <label className="email">Email</label>
-                    <input type="email" className="form-control"/>
+                    <input type="email" placeholder='Type your Email' className="form-control"/>
                     <label className="email">Password</label>
-                    <input type="password" className="form-control"/>
+                    <input type="password"  placeholder='Type your Password' className="form-control"/>
+                    
                     <center>
                         <div>
+                            <p className='pwdalign'><a href='#'>Forgot Password?</a></p>
                             <button className='btnmargin'>Log In</button>
-                            <button className='btnmargin'>Sign Up</button>
-                            <a href='#'>Forgot Password?</a>
-                            <hr></hr>
+    
+                        </div>
+                        <div>
+                            <p className='textmargin'>Create New Account?</p>
+                            <NavLink to="signup"><a href="./signup">Sign Up</a></NavLink>
                         </div>
                     </center>
                 </form>
