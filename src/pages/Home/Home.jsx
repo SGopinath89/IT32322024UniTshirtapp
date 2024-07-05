@@ -4,6 +4,7 @@ import './Home.css'; // Make sure to import your CSS file
 import '../../index.css';
 import Img1 from '../../assets/348428189_988640645839983_6693744623780082422_n.jpg';
 import Img2 from '../../assets/409036064_975637517253383_3930589684187972943_n.jpg';
+import Img3 from '../../assets/417399656_894368372689197_4906686469146823110_n.jpg';
 import logo from '../../../src/assets/uniwear-high-resolution-logo-transparent.png';
 
 export default function Home() {
@@ -66,7 +67,7 @@ export default function Home() {
                across the nation, capturing the essence of academic excellence and unity.</p>
           </div>
           <div className="image-body">
-            <img src = {Img1} width={"70%"}/>
+            <img src = {Img3} width={"70%"}/>
           </div>
         </div>
       </div>
