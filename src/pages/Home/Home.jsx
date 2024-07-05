@@ -57,6 +57,18 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="image-section">
+        <div className="image-content">
+          <div className="image-content-text">
+            <h2>Evolution of Sri Lanka's Academic Legacy</h2>
+            <p>Embark on a journey with UniWear, where each T-shirt tells the unique story of Sri Lanka's educational heritage. Our collection proudly represents iconic symbols, emblems, and mottos from esteemed governmental universities
+               across the nation, capturing the essence of academic excellence and unity.</p>
+          </div>
+          <div className="image-body">
+            <img src = {Img1} width={"70%"}/>
+          </div>
+        </div>
+      </div>
       <div className="footer-section">
         <img src={logo} alt="Logo" style={{ width: '150px', height: '30px' }}/>
         <p> Where fashion meets academic pride.<br/>Embrace your identity with <br/>UniWear's unique designs.</p>
