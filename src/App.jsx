@@ -32,7 +32,7 @@ function App() {
           <Route path='UniWear/login' element={<Login setShowNav={setShowNav} />} />
           <Route path='UniWear/UniWear' element={<Test />} />
           <Route path='UniWear/*' element={<PageNotFound />} />
-          <Route path='UniWear/signup*' element={<SignUp />} />
+          <Route path='UniWear/signup' element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </>
