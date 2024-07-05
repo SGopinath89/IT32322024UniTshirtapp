@@ -1,7 +1,7 @@
 export default function SignUp(){
     return(
         <>
-            <h1>Sell</h1>
+            <h1>Sign Up</h1>
         </>
     );
 }
