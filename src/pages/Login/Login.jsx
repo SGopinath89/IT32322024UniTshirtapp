@@ -29,7 +29,7 @@ export default function Login({ setShowNav }) {
                         </div>
                         <div>
                             <p className='textmargin'>Create New Account?</p>
-                            <NavLink to="signup"><a href="./signup">Sign Up</a></NavLink>
+                            <a href="./signup">Sign Up</a>
                         </div>
                     </center>
                 </form>
