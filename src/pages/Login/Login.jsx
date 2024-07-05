@@ -3,8 +3,6 @@ import './Login.css';
 
 import '../../index.css';
 
-import { NavLink, useNavigate } from "react-router-dom";
-
 export default function Login({ setShowNav }) {
     useEffect(() => {
         setShowNav(false); // Hide the navigation bar when the Login component mounts
@@ -29,7 +27,7 @@ export default function Login({ setShowNav }) {
                         </div>
                         <div>
                             <p className='textmargin'>Create New Account?</p>
-                            <NavLink to="signup"><a href="./signup">Sign Up</a></NavLink>
+                            <a href="./signup">Sign Up</a>
                         </div>
                     </center>
                 </form>
