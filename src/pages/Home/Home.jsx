@@ -21,7 +21,6 @@ export default function Home() {
           </div>
           <div className='spline-container'>
             <Spline scene="https://prod.spline.design/CKRSaAhKKxpINP-U/scene.splinecode" />
-            
           </div>
         </div>
       </div>
