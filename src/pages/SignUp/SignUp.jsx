@@ -15,8 +15,16 @@ export default function SignUp({ setShowNav }) {
                     <h2>Sign Up</h2>
                     <form className="login-form">
                         <label className="email">First Name</label><label className="lname">Last Name</label>
-                        <input type="text" placeholder='First Name' width="30" className="FnameInput"/>
+                        <input type="text" placeholder='First Name' width="30%" className="FnameInput"/><br></br>
 
+                        <label className="email">University</label>
+                        <select name="uni" id="uni">
+                            <option value="UOV">UOV</option>
+                            <option value="UOP">UOP</option>
+                            <option value="UOC">UOC</option>
+                        </select>
+
+                        <br></br><br></br><br></br><br></br>
                         <label className="email">Index Number</label>
                         <input type="text" placeholder='Type your Index Number' className="form-control"/>
 
