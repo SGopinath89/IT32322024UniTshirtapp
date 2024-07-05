@@ -1,19 +1,34 @@
 .login-div{
     width: 100%;
     height: 100vh;
-    background-color:aqua;
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
+.form-control{
+    color: black;
+}
+
 .login-card{
-    width:35%;
+    width:25%;
+}
+
+.textmargin{
+    margin-top: 100px;
+}
+
+.email{
+    color: black;
 }
 
 .btnmargin{
     margin: 20px;
-    width: 100px;
+    width: 90%;
+}
+
+.pwdalign{
+    text-align: right;
 }
 
 .login-form{
