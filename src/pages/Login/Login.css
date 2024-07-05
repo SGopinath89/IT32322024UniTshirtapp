@@ -8,9 +8,15 @@
 }
 
 .login-card{
-    width:50%;
+    width:35%;
+}
+
+.btnmargin{
+    margin: 20px;
 }
 
 .login-form{
     text-align:left;
+    margin: 0;
+	font-family: "Raleway", sans-serif;
 }
