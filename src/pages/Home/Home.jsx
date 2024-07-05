@@ -1,4 +1,5 @@
 import Spline from '@splinetool/react-spline';
+import { NavLink } from 'react-router-dom';
 import './Home.css'; // Make sure to import your CSS file
 import '../../index.css';
 import Img1 from '../../assets/348428189_988640645839983_6693744623780082422_n.jpg';
@@ -69,10 +70,23 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="footer-section">
-        <img src={logo} alt="Logo" style={{ width: '150px', height: '30px' }}/>
-        <p> Where fashion meets academic pride.<br/>Embrace your identity with <br/>UniWear's unique designs.</p>
-      </div>
+      <footer className="footer">
+        <div className="footer-column-section">
+          <img src={logo} alt="Logo" style={{ width: '150px', height: '30px' }}/>
+          <p> Where fashion meets academic pride.<br/>Embrace your identity with <br/>UniWear's unique designs.</p>
+        </div>
+        <div className="footer-nav">
+          <ul className="footer-nav-selection">
+            <li><NavLink to="UniWear/">Home</NavLink></li>
+            <li><NavLink to="UniWear/discover">Discover</NavLink></li>
+            <li><NavLink to="UniWear/sell">Sell</NavLink></li>
+            <li><NavLink to="UniWear/about">About</NavLink></li>
+          </ul>
+        </div>
+        <div className="footer-last-column">
+          <p>Follow UniWear</p>
+        </div>
+      </footer>
     </>
   );
 }
