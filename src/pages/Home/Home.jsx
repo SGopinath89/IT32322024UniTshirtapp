@@ -22,7 +22,7 @@ export default function Home() {
             <a href="./discover"><button>Discover</button></a>
           </div>
           <div className='spline-container'>
-            <Spline scene="https://prod.spline.design/CKRSaAhKKxpINP-U/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/CKRSaAhKKxpINP-U/scene.splinecode" />
           </div>
         </div>
       </div>
