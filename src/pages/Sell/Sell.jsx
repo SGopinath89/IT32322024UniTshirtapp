@@ -18,9 +18,12 @@ export default function Sell(){
             </div>
             <div className='addItem-div'>
                 <div className='card addItem-card'>
-                    <h2>Add Your Item</h2>
+                    <h3>Add Your Item</h3>
+
+                    <label htmlFor="tname">T-Shirt Name</label>
+                    <label htmlFor="sdes">Short Description</label>
+                    <label htmlFor="ides">Item Description</label>
                 </div>
-                
             </div>
         </>
     );
