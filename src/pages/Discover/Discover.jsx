@@ -8,12 +8,6 @@ import { useNavigate } from 'react-router-dom';
 export default function Discover({setShowNav}){
 
     const [university, setUniversity] = useState('');
-    const [error, setError] = useState('');
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        setShowNav(false);
-    }, [setShowNav]);
 
     const options = [
         { value: 'SelectUni', label: 'Select Your University...' },
