@@ -1,0 +1,33 @@
+.imgBestSeller{
+      border-radius: 60%;
+      width: 7%;
+      height: 7%;
+      margin-left: 20px;
+      margin-right: 20px;
+}
+
+.txtmargin{
+      margin: 20px;
+}
+
+.img-div{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+}
+
+.addItem-div{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      height: 50vh;
+}
+
+.addItem-card {
+      width: 90%;
+      max-width: 400px; /* Adjust max-width as needed for responsiveness */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
