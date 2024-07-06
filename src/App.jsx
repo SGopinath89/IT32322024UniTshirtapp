@@ -10,6 +10,7 @@ import Login from './pages/Login/Login';
 import Test from './pages/Test/Test';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import SignUp from './pages/SignUp/SignUp';
+import Post from './pages/Post/Post';
 import './App.css';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path='/UniWear/UniWear' element={<Test setShowNav={setShowNav} />} />
           <Route path='/UniWear/*' element={<PageNotFound setShowNav={setShowNav} />} />
           <Route path='/UniWear/signup' element={<SignUp setShowNav={setShowNav} />} />
+          <Route path='/Uniwear/Post' element={<Post setShowNav={setShowNav} />} />
         </Routes>
       </BrowserRouter>
     </>
