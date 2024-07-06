@@ -20,9 +20,16 @@ export default function SignUp({ setShowNav }) {
     }, [setShowNav]);
 
     const options = [
-        { value: 'UOV', label: 'UOV' },
-        { value: 'UOP', label: 'UOP' },
-        { value: 'UOC', label: 'UOC' }
+        { value: 'UOV', label: 'University of Vavuniya' },
+        { value: 'UOP', label: 'University of Peradeniya' },
+        { value: 'UOC', label: 'University of Colombo' },
+        { value: 'UOJ', label: 'University of Jaffna' },
+        { value: 'UOR', label: 'University of Ruhuna' },
+        { value: 'UOK', label: 'University of Kelaniya' },
+        { value: 'UOM', label: 'University of Moratuwa' },
+        { value: 'USJ', label: 'University of Sri Jayawardenepura' },
+        { value: 'RUSL', label: 'Rajarata University of Sri Lanka' },
+        { value: 'EUSL', label: 'Eastern University of Sri Lanka' }
     ];
     const defaultOption = options[0];
 
