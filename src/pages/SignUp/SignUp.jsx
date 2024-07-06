@@ -31,7 +31,6 @@ export default function SignUp({ setShowNav }) {
         { value: 'RUSL', label: 'Rajarata University of Sri Lanka' },
         { value: 'EUSL', label: 'Eastern University of Sri Lanka' }
     ];
-    const defaultOption = options[0];
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -112,7 +111,7 @@ export default function SignUp({ setShowNav }) {
                         <Dropdown
                             options={options}
                             onChange={(option) => setUniversity(option.value)}
-                            value={defaultOption}
+                            value={options.find(option => option.value === university)}
                             placeholder="Select an option"
                             className="form-control"
                         />
