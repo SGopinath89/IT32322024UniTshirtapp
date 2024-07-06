@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faUniversity, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Post.css'; // Make sure to import your CSS file
-import '../../index.css';
-import Img1 from '../../assets/348428189_988640645839983_6693744623780082422_n.jpg';
+import Img1 from '../../../assets/348428189_988640645839983_6693744623780082422_n.jpg';
 
 export default function Post(){
     return(
