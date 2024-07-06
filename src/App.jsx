@@ -11,6 +11,7 @@ import Test from './pages/Test/Test';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import SignUp from './pages/SignUp/SignUp';
 import Cart from './global/components/Cart/Cart';
+import Cart from './global/components/Post/Post';
 import './App.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Route path='/UniWear/*' element={<PageNotFound setShowNav={setShowNav} />} />
           <Route path='/UniWear/signup' element={<SignUp setShowNav={setShowNav} />} />
           <Route path='/UniWear/cart' element={<Cart setShowNav={setShowNav} />} />
+          <Route path='/UniWear/Post' element={<Post setShowNav={setShowNav} />} />
         </Routes>
       </BrowserRouter>
     </>
