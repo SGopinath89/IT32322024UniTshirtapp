@@ -3,7 +3,7 @@ import './Login.css';
 import '../../index.css';
 import { useNavigate } from 'react-router-dom';
 
-export default function Login({ setShowNav, setIsLoggedIn }) {
+export default function Login({ setShowNav, setIsLoggedIn, setUserId }) { // Add setUserId as a prop
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -18,6 +18,13 @@ export default function Login({ setShowNav, setIsLoggedIn }) {
             if (response.ok) {
                 const data = await response.text();
                 if (data === password) {
+                    // Fetch user ID
+                    const idResponse = await fetch(`http://localhost:8080/user/id/${email}`);
+                    if (idResponse.ok) {
+                        const userId = await idResponse.text();
+                        setUserId(userId); // Store the user ID
+                    }
+
                     setIsLoggedIn(true); // Update login state to true
                     setShowNav(true); // Show navigation bar after successful login
                     navigate('/UniWear/');
