@@ -11,7 +11,7 @@ import Test from './pages/Test/Test';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import SignUp from './pages/SignUp/SignUp';
 import Cart from './global/components/Cart/Cart';
-import Post from './global/components/Post/Post';
+import Cart from './global/components/Post/Post';
 import './App.css';
 
 function App() {
