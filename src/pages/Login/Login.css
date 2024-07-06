@@ -1,38 +1,72 @@
-.login-div{
+/* Ensure index.css styles are incorporated */
+
+.login-div {
     width: 100%;
     height: 100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.form-control{
-    color: black;
-}
-
-.login-card{
-    width:25%;
-}
-
-.textmargin{
-    margin-top: 100px;
-}
-
-.email{
-    color: black;
-}
-
-.btnmargin{
-    margin: 20px;
+.login-card {
     width: 90%;
+    max-width: 400px; /* Adjust max-width as needed for responsiveness */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.pwdalign{
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+}
+
+.btnmargin {
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnmargin:hover {
+    background-color: #0056b3;
+}
+
+.pwdalign {
     text-align: right;
+    margin-bottom: 10px;
 }
 
-.login-form{
-    text-align:left;
-    margin: 0;
-	font-family: "Raleway", sans-serif;
+.textmargin {
+    margin-top: 20px;
+    color: black;
+}
+
+.email {
+    color: black;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .login-card {
+        width: 90%;
+    }
 }

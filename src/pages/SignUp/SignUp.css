@@ -1,47 +1,69 @@
-.login-div{
-      width: 100%;
-      height: 100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-  }
-  
-  .form-control{
-      color: black;
-  }
-  
-  .login-card{
-      width:25%;
-  }
-  
-  .textmargin{
-      margin-top: 50px;
-  }
-  
-  .email{
-      color: black;
-  }
+.login-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-  .lname{
-      color: black;
-      margin-left: 150px;
-  }
+.login-card {
+    width: 90%;
+    max-width: 400px; /* Adjust max-width as needed for responsiveness */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-  .FnameInput{
-      width: 50px;
-  }
-  
-  .btnmargin{
-      margin: 20px;
-      width: 90%;
-  }
-  
-  .pwdalign{
-      text-align: right;
-  }
-  
-  .login-form{
-      text-align:left;
-      margin: 0;
-        font-family: "Raleway", sans-serif;
-  }
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.textmargin {
+    margin-top: 20px;
+}
+
+.email {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.lname {
+    color: black;
+    margin-left: 20px;
+}
+
+.btnmargin {
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnmargin:hover {
+    background-color: #0056b3;
+}
+
+.login-form {
+    text-align: left;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.name-fields {
+    display: flex;
+    flex-wrap: wrap; /* Ensures fields wrap on smaller screens */
+    gap: 10px; /* Adjust spacing between fields */
+}
+
+.first-name, .last-name {
+    width: 48%;
+}

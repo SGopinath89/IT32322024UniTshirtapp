@@ -108,7 +108,7 @@ button:focus-visible {
 }
 
 input,
-select {
+select, option {
 	border-radius: 8px;
 	border: 1px solid grey;
 	padding: 0.6rem 1.25rem;
