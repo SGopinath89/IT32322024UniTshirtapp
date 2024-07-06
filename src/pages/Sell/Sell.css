@@ -31,3 +31,26 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.txtlabel{
+      color: black;
+      text-align: left;
+}
+
+.form-addItem{
+      text-align: left;
+      margin: 0;
+      font-family: "Raleway", sans-serif;
+}
+
+.form-control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+}
+
+.addremove-div{
+      height: 60px;
+}
